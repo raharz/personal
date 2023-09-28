@@ -1,0 +1,12 @@
+/* general styles */
+.container{
+    width: 2100px;
+    background-color: rgb(248, 246, 246);
+    margin: auto;
+}
+body{
+    margin: 0; 
+}
+ul{
+    display: flex;
+}
