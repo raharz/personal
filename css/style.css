@@ -10,3 +10,16 @@ body{
 ul{
     display: flex;
 }
+/* header styles */
+header{
+   background-color: white;
+}
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+header nav{
+    display: inline-block;
+}
