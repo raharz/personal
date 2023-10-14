@@ -1,7 +1,7 @@
 /* general styles */
 .container{
     width: 2100px;
-    background-color: rgb(248, 246, 246);
+     background-color: rgb(255, 253, 253); 
     margin: auto;
 }
 body{
@@ -10,16 +10,24 @@ body{
 ul{
     display: flex;
 }
+p,a,span{
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+}
 /* header styles */
-header{
-   background-color: white;
+#header{
+   background-color: rgb(48, 57, 189) ;
 }
 header .container{
     display: flex;
     align-items: center;
     justify-content: space-between;
+  
 
 }
 header nav{
+    background-color: rgb(45, 11, 185);
+}
+.container{
     display: inline-block;
 }
