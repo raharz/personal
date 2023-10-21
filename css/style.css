@@ -1,7 +1,7 @@
 /* START GENERAL STYLE */
 body{
     background-color: rgb(238, 250, 246);
-    /* width: 2000px; */
+
     margin: 0;   
 }
 a,p,span {
@@ -22,8 +22,8 @@ li{
 /* START HEADER */
 .container{
     width: 100%;
-    height: 95px;
-    background-color: rgb(239, 254, 249);
+    height: 88px;
+    background-color: #fff;
     margin: 0 auto;
 }
 .container #header{
@@ -41,15 +41,42 @@ header nav li {
 }
 /* START MENU P1 */
 #header nav>ul>li{
-    margin-left: 20px;
+    margin-left: 10px;
     /* margin-right: 23px; */
 }
 #header nav>ul>li>a{
     padding: 8px;
+    font-size:10 ;
 }
 #header nav>ul>li>a:hover{
     color: #8490ff;
 }
-/* #header nav>ul>li>a:visited{
+#header nav>ul>li>a:focus{
     color: #8490ff;
-} */
+}
+/* START MENU PART2 */
+#header nav>ul>li>ul{
+    background-color: rgb(8, 191, 242);
+
+    position: absolute;
+    top: calc(9% + 18px);
+    right: 0px;
+    width: max-content;
+    padding: 0 8px 0 8px;
+    display: none;
+}
+#header nav>ul>li:hover>ul{
+    display: block;
+    transition-property: all;
+    transition-timing-function: ease;
+    transition-duration: 0.3s;
+}
+#header nav>ul>li>ul>li{
+    display: flex;
+}
+#header nav>ul>li>ul>li>a{
+    padding: 10px 7px;
+    padding-right: 100px;
+}
+/* MENU PART3 */
+
