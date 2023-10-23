@@ -1,48 +1,45 @@
 /* START GENERAL STYLE */
 body{
     background-color: rgb(238, 250, 246);
-
     margin: 0;   
-}
-a,p,span {
-    text-decoration: none;
-    font-family: "Poppins", sans-serif;
-    color: black;
 }
 ul{
     list-style-type: none;
-    /* display: flex; */
     margin: 0;
     padding: 0;
 }
 li{
     display: inline-block;
 }
-
-/* START HEADER */
+a,p,span,h1,h5 {
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    color: black;
+}
 .container{
     width: 100%;
     height: 88px;
     background-color: #fff;
     margin: 0 auto;
 }
+/* START HEADER */
+
 .container #header{
     display: flex;
     justify-content: space-around;
-    padding-top: 2%;
+    height: 60px;
     align-items: center;
 }
-header nav {
+#header nav {
     display: inline-block;
 }
 
-header nav li {
+#header nav li {
     position: relative;
 }
 /* START MENU P1 */
 #header nav>ul>li{
     margin-left: 10px;
-    /* margin-right: 23px; */
 }
 #header nav>ul>li>a{
     padding: 8px;
@@ -57,19 +54,17 @@ header nav li {
 /* START MENU PART2 */
 #header nav>ul>li>ul{
     background-color: rgb(8, 191, 242);
-
     position: absolute;
-    top: calc(9% + 18px);
-    right: 0px;
+    top: calc(100% + 23px);
+    right: 0;
     width: max-content;
-    padding: 0 8px 0 8px;
+    padding: 10px;
+    color: #333;
     display: none;
+    /* transition:  500ms ease in 2s; */
 }
 #header nav>ul>li:hover>ul{
     display: block;
-    transition-property: all;
-    transition-timing-function: ease;
-    transition-duration: 0.3s;
 }
 #header nav>ul>li>ul>li{
     display: flex;
@@ -79,4 +74,20 @@ header nav li {
     padding-right: 100px;
 }
 /* MENU PART3 */
+
+/* start intro part1 */
+.intro{
+    background-color: #8490ff;
+   
+}
+#hero-img{
+    margin-left: 50%;
+    display: inline-block;
+}
+#intro-text{
+    background-color: aquamarine;
+    display: inline-block;
+    width: 100%;
+}
+
 
